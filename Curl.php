@@ -96,7 +96,6 @@ class Curl {
                 $this->setError(curl_error($this->ch));
                 $this->setErrorNo(curl_errno($this->ch));
             }
-            $this->close();
             return $jsonData;
         }
         return false;
